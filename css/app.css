@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.25rem !important;
+}
+
+body {
+    background-color: #fef8f5;
+    color: black;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+h1,
+h2,
+h3 {
+    color: black;
+    font-weight: 1.25rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*---------------------*/
+/* REUSABLE CSS CLASSES */
+/*---------------------*/
+
+/* .container {
+    max-width: 968px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.section {
+    padding: 4.5rem 0 1rem;
+} */
+
+
+/*---------------------*/
+/* NAVBAR */
+/*---------------------*/
+
+.navbar .container-fluid .navbar-brand {
+    margin-left: 7.3rem;
+}
+
+.navbar-light .container-fluid .navbar-nav .nav-link {
+    margin-left: 2rem;
+    color: black;
+}
+
+
+.navbar-light .container-fluid .navbar-nav>button {
+    margin-left: 10rem;
+
+}
+
+
+/*---------------------*/
+/* HERO */
+/*---------------------*/
+
+.hero-img {
+    height: 90vh;
+    max-width: 100%;
+}
+
+.hero-title {
+    position: relative;
+    bottom: 300px;
+    color: black;
+    font-weight: 4rem;
+    font-size: 4rem;
+}
+
+.hero-description {
+    position: relative;
+    bottom: 300px;
+}
+
+
+/*---------------------*/
+/* PROPERTIES */
+/*---------------------*/
+
+.properties-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: black;
+    margin-top: 4rem;
+    justify-content: center;
+    color: #2ECA6A;
+    /* text-align: center; */
+}
+
+.properties-subtitle {
+    text-align: center;
+    /* margin-top: .5rem; */
+    position: relative;
+    bottom: 20px;
+}
+
+.properties-group {
+    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
+    row-gap: 2.5rem;
+    position: relative;
+    bottom: 80px;
+
+}
+
+
+.properties-box {
+    border: 2px solid #D9D9D9;
+    /* position: absolute; */
+    width: 173px;
+    height: 146px;
+    left: 372px;
+    top: 873px;
+    padding: 2rem;
+    margin: 1rem;
+    background: #D9D9D9;
+    margin-top: 80px;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.properties-box:hover {
+    background-color: #2ECA6A;
+    color: #fff;
+}
+
+.properties-icon {
+    /* position: absolute; */
+    /* text-align: center; */
+    /* top: 50%; */
+    position: relative;
+    font-size: 3rem;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.properties-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+.property-title {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: black;
+    margin-top: 4rem;
+    /* justify-c ontent: left; */
+    color: #2ECA6A;
+}
