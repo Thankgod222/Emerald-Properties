@@ -62,6 +62,14 @@ new Swiper('.property-slider', {
             spaceBetween: 20
         },
 
+        920: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+
+
+
+
         1200: {
             slidesPerView: 3,
             spaceBetween: 20
@@ -95,6 +103,12 @@ new Swiper('.blog-slider', {
             spaceBetween: 20
         },
 
+        920: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+
+
         1200: {
             slidesPerView: 3,
             spaceBetween: 20
@@ -125,6 +139,8 @@ new Swiper('.testimonial-slider ', {
             slidesPerView: 1,
             spaceBetween: 20
         },
+
+
 
         1200: {
             slidesPerView: 1,
