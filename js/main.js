@@ -175,6 +175,10 @@ new Swiper('.about-testimonial-slider ', {
             slidesPerView: 1,
             spaceBetween: 20
         },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
 
 
 
@@ -203,3 +207,15 @@ new Swiper('#testimonial-carousel', {
         clickable: true
     }
 });
+
+// PRELOADER
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+}
