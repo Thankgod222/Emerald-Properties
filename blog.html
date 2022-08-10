@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- BOXICONS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/app.css">
+
+    <title>Emerald Blog Page</title>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR START-->
+
+
+    <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Search Property</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- ======= Property Search Section ======= -->
+            <div class="click-closed"></div>
+            <!--/ Form Search Star /-->
+            <div class="box-collapse">
+                <div class="title-box-d">
+                    <h3 class="title-d">Search Property</h3>
+                </div>
+                <span class="close-box-collapse right-boxed bi bi-x"></span>
+                <div class="box-collapse-wrap form">
+                    <form class="form-a">
+                        <div class="row">
+                            <div class="col-md-12 mb-2">
+                                <div class="form-group">
+                                    <label class="pb-2" for="Type">Keyword</label>
+                                    <input type="text" class="form-control form-control-lg form-control-a"
+                                        placeholder="Keyword">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="form-group mt-3">
+                                    <label class="pb-2" for="Type">Type</label>
+                                    <select class="form-control form-select form-control-a" id="Type">
+                                        <option>All Type</option>
+                                        <option>For Rent</option>
+                                        <option>For Sale</option>
+                                        <option>Open House</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="form-group mt-3">
+                                    <label class="pb-2" for="city">City</label>
+                                    <select class="form-control form-select form-control-a" id="city">
+                                        <option>All City</option>
+                                        <option>Alabama</option>
+                                        <option>Arizona</option>
+                                        <option>California</option>
+                                        <option>Colorado</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="form-group mt-3">
+                                    <label class="pb-2" for="bedrooms">Bedrooms</label>
+                                    <select class="form-control form-select form-control-a" id="bedrooms">
+                                        <option>Any</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="form-group mt-3">
+                                    <label class="pb-2" for="garages">Garages</label>
+                                    <select class="form-control form-select form-control-a" id="garages">
+                                        <option>Any</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="form-group mt-3">
+                                    <label class="pb-2" for="bathrooms">Bathrooms</label>
+                                    <select class="form-control form-select form-control-a" id="bathrooms">
+                                        <option>Any</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="form-group mt-3">
+                                    <label class="pb-2" for="price">Min Price</label>
+                                    <select class="form-control form-select form-control-a" id="price">
+                                        <option>Unlimite</option>
+                                        <option>$50,000</option>
+                                        <option>$100,000</option>
+                                        <option>$150,000</option>
+                                        <option>$200,000</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-b">Search Property</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- End Property Search Section -->>
+
+            <button class="btn btn-secondary" type="button">A Button</button>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Emerald properties</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav m-auto">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#properties">Property</a>
+                    <a class="nav-link" href="#">Blog</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Property</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Agent</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Agent Grid</a></li>
+                        </ul>
+                    </li>
+                    <a class="nav-link" href="#contact.html">Contact</a>
+
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class='bx bx-search'></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- NAVBAR END-->
+
+
+
+    <!-- HOME SECTION -->
+    <section class="blog-home" id="blog-home">
+
+        <div class="blog-home-image">
+            <img src="./img/property-9.jpg" alt="" class="blog-home-img">
+            <div class="blog-home-property">blog</div>
+
+        </div>
+
+    </section>
+
+    <!-- home-blog-section -->
+
+
+    <section class="blog-home-services" id="blog-home-services">
+        <div class="blog-home-container">
+            <div class="blog-home-group">
+
+                <div class="blog-home-box">
+                    <img src="./img/post-6.jpg" alt="" class="blog-image-subimg">
+                    <div class="blog-home-text">
+                        <div class="blog-home-filter">
+                            <span class="blog-home-filterspan">Admin</span>
+                            <span class="blog-home-filterspan"> Dec.01.2020</span>
+                            <a class="blog-home-filterslink"> 3 COMMENTS</a>
+                        </div>
+
+                        <h3 class="blog-home-title">New Home Sales Picked <br> up in December</h3>
+                        <p class="blog-home-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                            similique? Non tenetur nemo </p>
+
+                    </div>
+                </div>
+
+
+                <div class="blog-home-box">
+                    <img src="./img/post-6.jpg" alt="" class="blog-image-subimg">
+                    <div class="blog-home-text">
+                        <div class="blog-home-filter">
+                            <span class="blog-home-filterspan">Admin</span>
+                            <span class="blog-home-filterspan"> Dec.01.2020</span>
+                            <a class="blog-home-filterslink"> 3 COMMENTS</a>
+                        </div>
+
+                        <h3 class="blog-home-title">New Home Sales Picked <br> up in December</h3>
+                        <p class="blog-home-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                            similique? Non tenetur nemo </p>
+
+                    </div>
+                </div>
+
+                <div class="blog-home-box">
+                    <img src="./img/post-6.jpg" alt="" class="blog-image-subimg">
+                    <div class="blog-home-text">
+                        <div class="blog-home-filter">
+                            <span class="blog-home-filterspan">Admin</span>
+                            <span class="blog-home-filterspan"> Dec.01.2020</span>
+                            <a class="blog-home-filterslink"> 3 COMMENTS</a>
+                        </div>
+
+                        <h3 class="blog-home-title">New Home Sales Picked <br> up in December</h3>
+                        <p class="blog-home-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                            similique? Non tenetur nemo </p>
+
+                    </div>
+                </div>
+
+                <div class="blog-home-box">
+                    <img src="./img/post-6.jpg" alt="" class="blog-image-subimg">
+                    <div class="blog-home-text">
+                        <div class="blog-home-filter">
+                            <span class="blog-home-filterspan">Admin</span>
+                            <span class="blog-home-filterspan"> Dec.01.2020</span>
+                            <a class="blog-home-filterslink"> 3 COMMENTS</a>
+                        </div>
+
+                        <h3 class="blog-home-title">New Home Sales Picked <br> up in December</h3>
+                        <p class="blog-home-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                            similique? Non tenetur nemo </p>
+
+                    </div>
+                </div>
+
+                <div class="blog-home-box">
+                    <img src="./img/post-6.jpg" alt="" class="blog-image-subimg">
+                    <div class="blog-home-text">
+                        <div class="blog-home-filter">
+                            <span class="blog-home-filterspan">Admin</span>
+                            <span class="blog-home-filterspan"> Dec.01.2020</span>
+                            <a class="blog-home-filterslink"> 3 COMMENTS</a>
+                        </div>
+
+                        <h3 class="blog-home-title">New Home Sales Picked <br> up in December</h3>
+                        <p class="blog-home-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                            similique? Non tenetur nemo </p>
+
+                    </div>
+                </div>
+
+                <div class="blog-home-box">
+                    <img src="./img/post-6.jpg" alt="" class="blog-image-subimg">
+                    <div class="blog-home-text">
+                        <div class="blog-home-filter">
+                            <span class="blog-home-filterspan">Admin</span>
+                            <span class="blog-home-filterspan"> Dec.01.2020</span>
+                            <a class="blog-home-filterslink"> 3 COMMENTS</a>
+                        </div>
+
+                        <h3 class="blog-home-title">New Home Sales Picked <br> up in December</h3>
+                        <p class="blog-home-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                            similique? Non tenetur nemo </p>
+
+                    </div>
+                </div>
+
+                <div class="blog-home-box">
+                    <img src="./img/post-6.jpg" alt="" class="blog-image-subimg">
+                    <div class="blog-home-text">
+                        <div class="blog-home-filter">
+                            <span class="blog-home-filterspan">Admin</span>
+                            <span class="blog-home-filterspan"> Dec.01.2020</span>
+                            <a class="blog-home-filterslink"> 3 COMMENTS</a>
+                        </div>
+
+                        <h3 class="blog-home-title">New Home Sales Picked <br> up in December</h3>
+                        <p class="blog-home-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                            similique? Non tenetur nemo </p>
+
+                    </div>
+                </div>
+
+                <div class="blog-home-box">
+                    <img src="./img/post-6.jpg" alt="" class="blog-image-subimg">
+                    <div class="blog-home-text">
+                        <div class="blog-home-filter">
+                            <span class="blog-home-filterspan">Admin</span>
+                            <span class="blog-home-filterspan"> Dec.01.2020</span>
+                            <a class="blog-home-filterslink"> 3 COMMENTS</a>
+                        </div>
+
+                        <h3 class="blog-home-title">New Home Sales Picked <br> up in December</h3>
+                        <p class="blog-home-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                            similique? Non tenetur nemo </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER SECTION -->
+    <section class="footer" id="footer">
+        <div class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-heading footer-1 col">
+                        <h2>Estate Agency</h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, rem. Eligendi quo
+                            deleniti
+
+                        </p>
+
+                        <p class="">
+                            <span>phone</span>
+                            <a class="" href="tel:+234 81 581 714 22">+234 81 581 714 22</a>
+                        </p>
+
+                        <p class="">
+                            <span>Email</span>
+                            <a class="" href="tel:+234 81 581 714 22">+234 81 581 714 22</a>
+                        </p>
+
+
+                    </div>
+
+                    <div class="footer-heading footer-2 col">
+                        <h2>The Company</h2>
+                        <a href="#">
+                            <i class='bx bx-chevron-right'></i>
+                            Site Map
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bx-chevron-right'></i>
+                            Legal
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bx-chevron-right'></i>
+                            Agent Admin
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bx-chevron-right'></i>
+                            Careers
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bx-chevron-right'></i>
+                            Affiliate
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bx-chevron-right'></i>
+                            Private Policy
+                        </a>
+                    </div>
+
+
+                    <div class="footer-heading footer-3 col">
+                        <h2>International Sites</h2>
+                        <a href="#">
+                            <i class='bx bx-chevron-right'></i>
+                            Venezuala
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bx-chevron-right'></i>
+                            China
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bx-chevron-right'></i>
+                            HongKong
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bx-chevron-right'></i>
+                            Argentina
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bx-chevron-right'></i>
+                            Singapore
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bx-chevron-right'></i>
+                            Phillipines
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#home" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="./About.html" class="nav-link px-2 text-muted">About</a></li>
+                <li class="nav-item"><a href="#property" class="nav-link px-2 text-muted">Property</a></li>
+                <li class="nav-item"><a href="#blog" class="nav-link px-2 text-muted">Blog</a></li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+
+                <div class="footer-icon">
+                    <i class='bx bxl-facebook-square footer-icons'></i>
+                    <i class='bx bxl-twitter footer-icons'></i>
+                    <i class='bx bxl-instagram footer-icons'></i>
+                    <i class='bx bxl-linkedin-square footer-icons'></i>
+                </div>
+
+            </ul>
+
+            <p class="text-center text-muted">© 2021 Company, Inc</p>
+        </footer>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- OWL CAROUSEL -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
+
+    <!-- SWIPER.JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+                integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+                integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+                crossorigin="anonymous"></script> -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
