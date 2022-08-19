@@ -3,6 +3,7 @@
 
 
 * {
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -104,45 +105,81 @@ img {
 .hero-img {
     height: 100vh;
     max-width: 100%;
-    /* opacity: 8; */
-    /* Add the blur effect */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-
-
-    /* -webkit-filter: blur(3px); //change the value according to what suits the best
-    -moz-filter: blur(3px); //change the value according to what suits the best
-    -o-filter: blur(3px); //change the value according to what suits the best
-    -ms-filter: blur(3px); //change the value according to what suits the best
-    filter: blur(3px); //change the value according to what suits the best */
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
 .hero-title {
     position: relative;
-    bottom: 300px;
+    bottom: 220px;
     color: #fff;
     /* font-weight: 4rem; */
-    font-size: 50px;
+    font-size: 3rem;
     font-family: TruliaSans, Trulia-Fallback, sans-serif;
+    /* font-family: inter; */
     line-height: 1.12;
+    font-weight: 600px;
 }
 
 .hero-description {
     position: relative;
-    bottom: 230px;;
+    bottom: 180px;;
     padding: 8px 24px;
     border-radius: 10px;
-  
 }
 
 
 
+.hero-search-container{
+    position: relative;
+    bottom: 160px;
+   justify-self: center;
+
+  
+    
+}
+
+form.example{
+   border-radius: 1rem;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 75%;
+  background: #f1f1f1;
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+
+
+form.example button {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+   border-radius: 0rem 1rem 1rem 0rem;
+}
 
 
 /*---------------------*/
 /* PROPERTIES */
 /*---------------------*/
 
+.properties-container{
+   margin-bottom: 100px;
+  
+   margin-left: 20rem;
+   margin-right: 20rem;
+
+}
 
 .properties-title {
     text-align: center;
@@ -164,26 +201,86 @@ img {
     bottom: 20px;
 }
 
-.properties-group {
-    /* grid-template-columns: repeat(4, 1fr); */
+.properties-box{
+    gap: .2rem;
+    flex-direction: row;
+    row-gap: .2rem;
+}
+
+
+.properties-box:focus{
+    border: 1px solid #2eca6a;
+    cursor: pointer;
+    /* padding: .5rem; */
+}
+
+
+.properties-box-image{
+     width: 128px;
+    height: 128px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.properties-box-title{
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.properties-box-description{
+    text-align: center;
+    padding: 10px 10px 10px;
+}
+
+.properties-box-button{
+    text-align: center;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    background-color: #2ECA6A;
+    justify-self: center;
+     display: block;
+    margin: auto;
+    /* margin: 0px 0px 16px; */
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    /* display: inline-block; */
+    text-align: center;
+    font-weight: bold;
+    transition: top 0.1s ease 0s, box-shadow 0.1s ease 0s, border-color 0.1s ease 0s, background-color 0.1s ease 0s, color 0.1s ease 0s;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 8px 16px;
+    color: rgb(255, 255, 255);
+    /* background-color: rgb(0, 120, 130); */
+    border-color: transparent;
+    box-shadow: rgb(59 65 68 / 70%) 0px 8px 20px -15px;
+    outline: none;
+}
+
+/* .properties-group {
+
     display: flex;
     justify-content: center;
-    /* row-gap: 2.5rem; */
-    /* position: relative; */
+    
     bottom: 80px;
     justify-self: center;
     text-decoration: none;
     color: #000000;
 
-}
+} */
 
 
-.properties-box {
+/* .properties-box {
     border: 2px solid #D9D9D9;
-    /* position: relative; */
-    /* width: 173px;
-    height: 146px;
-    left: 372px; */
     top: 873px;
     padding: 2rem;
 
@@ -192,7 +289,6 @@ img {
     background: #D9D9D9;
     text-decoration: none;
     margin-top: 20px;
-    /* grid-template-columns: repeat(3, 1fr); */
 
 }
 
@@ -214,7 +310,7 @@ img {
     align-items: center;
     justify-content: center;
 
-}
+} */
 
 
 
@@ -439,6 +535,7 @@ img {
     margin-top: 200px;
     column-gap: 2rem;
     /* justify-content: space-evenly; */
+    cursor: pointer;
 }
 
 .agent-name {
@@ -482,7 +579,7 @@ img {
 .blog-image {
     width: 100%;
     /* margin-left: 1rem; */
-    height: 500px;
+    height: 300px;
 }
 
 .blog-box {
@@ -532,13 +629,7 @@ img {
     color: #2ECA6A;
 }
 
-.testimonial-box {
-    /* grid-template-columns: repeat(2, 1fr);
-    display: flex;
-    justify-content: center;
-    row-gap: 4.5rem;
-    position: relative; */
-}
+
 
 
 .testimonial-img {
@@ -550,15 +641,7 @@ img {
     margin-right: 20px;
 }
 
-.testimonial-data {
 
-    /* width: 628px;
-    height: 78px;
-    left: 690px;
-    margin-top: 10px; */
-    /* top: 200px; */
-
-}
 
 
 .testimonail-icon {
@@ -1199,20 +1282,7 @@ img {
 
 /* PRELOADER */
 #loader {
-    /* position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid blue;
-    border-right: 16px solid green;
-    border-bottom: 16px solid red;
-    width: 60px;
-    height: 60px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite; */
+    
     content: "";
     position: fixed;
     top: calc(50% - 30px);
@@ -1598,7 +1668,7 @@ img {
     }
 
     .blog-img {
-        height: 440px;
+        height: 300px;
         width: 100%;
     }
 
@@ -1615,9 +1685,9 @@ img {
 
     }
 
-    .properties-box {
+    /* .properties-box {
         border: 2px solid #D9D9D9;
-        /* position: relative; */
+       
         width: 173px;
         height: 146px;
         left: 372px;
@@ -1628,9 +1698,9 @@ img {
 
         background: #D9D9D9;
         margin-top: 20px;
-        /* grid-template-columns: repeat(3, 1fr); */
 
-    }
+
+    } */
 
     .agent-text {
         font-size: 1.3rem;

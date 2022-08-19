@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOSTRAP CSS -->
+    <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- BOXICONS CDN -->
@@ -204,11 +204,11 @@
                             <button class="hero-description">Sell</button>
                             <button class="hero-description">Rent</button>
                             <div class="hero-search-container">
-                                <form  class="hero-description-form" action="/action_page.php">
-                                    <input type="text" placeholder="Search.." name="search" class="hero-search-button">
-                                    <button type="submit"><i class="fa fa-search hero-search-button"></i></button>
-                                </form>
-                            </div>
+                            <form class="example" action="/action_page.php" style="margin:auto;max-width:600px;">
+                                <input type="text" placeholder="Search.." name="search2" style="padding: 1rem;">
+                                <button type="submit" style="padding: 1rem;"><i class="fa fa-search"></i></button>
+                            </form>
+                          </div>
                             <!-- <p class="hero-description">HOUSING LANDING MOTORS AND PROPERTY</p> -->
                         </div>
                     </div>
@@ -246,43 +246,48 @@
 
         <!-- PROPERTIES SECTION -->
         <section class="properties" id="properties">
-            <div class="properties-container container grid">
+         <div class="properties-container">
                 <h2 class="properties-title">EMERALD PROPERTIES</h2>
                 <h4 class="properties-subtitle">EXPLORE OUR CATEGORIES AND PLACES</h4>
 
-                <a href="">
-                    <div class="properties-group">
+                
+               <div class="properties-group">
+
                         <div class="properties-box">
-                            <i class='bx bxs-landmark properties-icon'></i>
-                            <p class="properties-description">Land</p>
+                            <img class="properties-box-image" src="./img/BuyAHome.svg" alt="">
+                            <h3 class="properties-box-title">Buy a home</h3>
+                            <p class="properties-box-description">Lorem ipsum dolor sit amet consectetur libero <br>
+                                Mimpedit perferendis ab at, ut quidem illum dolorum?</p>
+                          <button class="properties-box-button">Find a home</button>
                         </div>
-                </a>
+                
 
-                <a href="">
+                
+                 <div class="properties-box">
+                    <img class="properties-box-image" src="./img/RentAHome.svg" alt="">
+                    <h3 class="properties-box-title">Rent a home</h3>
+                    <p class="properties-box-description">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Eius itaque dolore,
+                        ut quidem illum dolorum?</p>
+                    <button class="properties-box-button">Rent a home</button>
+                   </div>
+            
+
+                
                     <div class="properties-box">
-                        <i class='bx bxs-home properties-icon'></i>
-                        <p class="properties-description">house</p>
+                        <img class="properties-box-image" src="./img/Neighborhoods.svg" alt="">
+                        <h3 class="properties-box-title">See Neighbour</h3>
+                        <p class="properties-box-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Eius itaque dolore,
+                            ut quidem illum dolorum?</p>
+                        <button class="properties-box-button">See Neighbour</button>
                     </div>
-                </a>
 
-                <a href="">
-                    <div class="properties-box">
-                        <i class='bx bxs-car properties-icon'></i>
-                        <p class="properties-description">cars</p>
-
-                    </div>
-                </a>
+               </div> 
 
 
-                <a href="">
-                    <div class="properties-box">
-                        <i class='bx bxs-landmark properties-icon'></i>
-                        <p class="properties-description">Land</p>
-                    </div>
-                </a>
+                 
             </div>
 
-    </div>
+        </section>
 
 
 
@@ -413,7 +418,7 @@
                             <br>
                             <span class="agent-contact">Email : agent@gmail.com</span>
                             <div class="agent-icon">
-                                <i class='bx bxl-facebook-circle'></i>
+                                <a href=""><i class='bx bxl-facebook-circle'></i></a>
                                 <i class='bx bxl-twitter'></i>
                                 <i class='bx bxl-instagram'></i>
                             </div>
