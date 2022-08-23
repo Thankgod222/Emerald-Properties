@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Padauk&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Padauk&family=Roboto:ital,wght@0,500;1,300&family=Rubik&display=swap');
 
 * {
     box-sizing: border-box;
@@ -22,13 +19,13 @@ body,
 button,
 input,
 textarea {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 body {
     background-color: #f7f7f7;
     color: black;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 h1,
@@ -69,15 +66,6 @@ img {
 /* NAVBAR */
 /*---------------------*/
 
-/* .navbar .container-fluid .navbar-brand {
-
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 28px;
-    color: #000;
-    font-family: var(--font-secondary);
-
-} */
 
 .navbar-light .container-fluid .navbar-nav .nav-link {
     margin-left: 2rem;
@@ -110,6 +98,7 @@ img {
     max-width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: .8;
 
 }
 
@@ -117,10 +106,7 @@ img {
     position: relative;
     bottom: 220px;
     color: #fff;
-    /* font-weight: 4rem; */
     font-size: 3rem;
-    font-family: TruliaSans, Trulia-Fallback, sans-serif;
-    /* font-family: inter; */
     line-height: 1.12;
     font-weight: 600px;
 }
@@ -128,7 +114,6 @@ img {
 .hero-description {
     position: relative;
     bottom: 180px;
-    ;
     padding: 8px 24px;
     border-radius: 10px;
 }
@@ -195,6 +180,7 @@ form.example button {
     text-align: center;
     position: relative;
     bottom: 20px;
+    font-family: 'Inter'sans-serif;
 }
 
 
@@ -237,6 +223,7 @@ form.example button {
     width: 100%;
     display: block;
     height: auto;
+    opacity: .8;
 }
 
 .property-left {
@@ -246,7 +233,9 @@ form.example button {
     text-align: left;
 }
 
-.property-image:hover .overlay {
+
+
+/* .property-image:hover .overlay {
     opacity: 1;
 }
 
@@ -261,7 +250,34 @@ form.example button {
     font-size: 20px;
     padding: 20px;
     text-align: center;
+} */
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2ECA6A;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+
+
 }
+
+.property-image:hover .overlay {
+    height: 15%;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    opacity: 1;
+}
+
+
 
 .property .swiper-pagination {
     margin-top: 20px;
@@ -308,6 +324,8 @@ form.example button {
 .owl-nav[class*="owl-"]:hover {
     background: transparent;
 }
+
+
 
 /*---------------------*/
 /* Agent section */
@@ -365,24 +383,36 @@ form.example button {
     overflow: hidden;
     width: 100%;
     height: 0;
-    transition: .5s ease;
     opacity: 0.8;
-
-
-
 }
 
 .agent-image:hover .agent-overlay {
     height: 100%;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s ease-in;
+    z-index: 2;
 }
 
 .agent-text {
     text-align: left;
     margin-left: .5rem;
     padding-top: 1.5rem;
-    color: #fff;
+    color: black;
     font-size: 1.4rem;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.agent-description {
+    font-size: 1rem;
+    font-family: 'Roboto'sans-serif;
+    color: black;
+}
+
+
+.agent-contact {
+    font-size: 1.2rem;
+    font-family: 'Roboto'sans-serif;
+    color: black;
 }
 
 .agent-icon {
@@ -391,10 +421,19 @@ form.example button {
     margin-top: 200px;
     column-gap: 2rem;
     cursor: pointer;
+
+}
+
+.agent-icon i {
+    border-radius: 50%;
+    font-size: 1.7rem;
+    color: black;
+
 }
 
 .agent-name {
-    color: #fff;
+    color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -507,6 +546,7 @@ form.example button {
 .Hero-About-img {
     height: 550px;
     max-width: 100%;
+    background-image: cover;
 }
 
 .Hero-About-title {
@@ -570,14 +610,10 @@ form.example button {
 
 .video-container {
     margin-top: 1.5rem;
-    text-align: center;
-    /* max-width: fit-content; */
-    width: 100%;
+    max-width: 100%;
 }
 
-.video-img {
-    text-align: center;
-}
+
 
 .video-data {
     background-color: #2ECA6A;
@@ -637,21 +673,30 @@ form.example button {
     background-color: white;
     box-shadow: #fff;
     padding: 1rem;
-    /* position: relative; */
 }
 
 .about-testimonial-subbox {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 400px;
     margin: 0 auto;
-    /* background: #A0C5E8; */
     padding-left: 2rem;
     padding-right: 4rem;
 }
 
+.about-testimonial-subbox h2 {
+    position: absolute;
+    bottom: 81px;
+    left: 160px;
+    font-size: 1rem;
+}
 
+.about-testimonial-subbox h4 {
+    position: absolute;
+    bottom: 51px;
+    left: 160px;
+    font-size: .7rem;
+}
 
 .about-testimonial-icon {
     border-radius: 50%;
@@ -683,15 +728,30 @@ form.example button {
 }
 
 /* MEDIA QUERY */
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
     .about-img {
         width: 100%;
         height: 100%;
     }
 
+    .video-container {
+        margin-top: 1.5rem;
+        max-width: 100%;
+    }
+
+    .video-img {
+        width: 100%;
+    }
+
     .video-data {
         width: 100%;
         height: 100%;
+
+    }
+
+    .video-databutton {
+        position: relative;
+        justify-self: center;
     }
 
     .about-rating {
@@ -699,6 +759,8 @@ form.example button {
         flex-direction: column;
         justify-content: center;
     }
+
+
 }
 
 @media screen and (min-width: 475px) {
@@ -724,6 +786,10 @@ form.example button {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+    }
+
+    .video-img {
+        width: 100%;
     }
 }
 
@@ -970,7 +1036,7 @@ form.example button {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 7rem;
-    font-family: inter;
+    font-family: 'inter'sans-serif;
     color: #fff;
 }
 
@@ -980,26 +1046,33 @@ form.example button {
 
 
 .blog-home-text {
-    padding: 10px;
+    padding: 25px;
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .blog-home-title {
-    font-size: 1.50rem;
-    font-family: inter;
+    font-size: 16px;
+    font-family: 'inter'sans-serif;
 }
+
+
 
 .blog-home-filterspan {
     text-transform: uppercase;
-    font-size: 13px;
-    margin: .5rem;
+    font-size: 1.20rem;
+}
 
+.blog-home-filter {
+    word-spacing: 20px;
 }
 
 .blog-home-filterslink {
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 1.20rem;
     color: #2ECA6A;
     cursor: pointer;
 }
@@ -1031,7 +1104,6 @@ form.example button {
     .blog-home-group {
         display: grid;
         grid-template-columns: repeat(4, 2fr);
-        /* column-gap: .5rem; */
         margin-left: 7rem;
         margin-right: 7rem;
     }
@@ -1040,16 +1112,43 @@ form.example button {
         width: 100%;
         margin-top: 40px;
         padding: .55rem;
-        /* background-color: #fff; */
     }
 
 
 }
 
+
+
+/*--------------------------------------------------------------
+# single Page Blog
+--------------------------------------------------------------*/
+
+
+.single-blog-img {
+    height: 330px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: cover;
+}
+
+.single-blog-property {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5rem;
+    font-weight: 600px;
+    font-family: 'inter'sans-serif;
+    color: #fff;
+}
+
 /* FOOTER SECTION */
 
 #footer {
-    background-color: #F3F3F3;
+    background-color: #2ECA6A;
+    opacity: .9;
     margin-top: 100px;
 }
 
@@ -1102,6 +1201,10 @@ form.example button {
 
 }
 
+.footer-subsection {
+    margin-bottom: 50px;
+}
+
 /* PRELOADER */
 #loader {
 
@@ -1151,11 +1254,17 @@ form.example button {
 
 
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 280px) {
 
     .navbar .container-fluid .navbar-brand {
         color: #000;
         font-family: var(--font-secondary);
+
+
+    }
+
+    .hero-img {
+        background-image: cover;
 
     }
 
@@ -1165,6 +1274,11 @@ form.example button {
 
     .properties-title {
         text-align: center;
+    }
+
+    .properties-box-image {
+        width: 100%;
+        height: 250px;
     }
 
     .properties-box-title {
@@ -1262,13 +1376,28 @@ form.example button {
 
     .testimonial-vl {
         border-left: 3px solid #2eca6a;
-        height: 280px;
+        height: 290px;
         position: absolute;
         margin-right: 10px;
 
 
     }
 
+
+    .testimonial-right-icon {
+        color: #2eca6a;
+        font-size: 1rem;
+        left: 110px;
+        top: 199px;
+        position: absolute;
+    }
+
+    .testimonial-left-icon {
+        color: #2eca6a;
+        font-size: 1rem;
+        left: 16px;
+        position: absolute;
+    }
 
     .testimonial-box p {
         margin-left: 40px;
@@ -1278,10 +1407,12 @@ form.example button {
 
     .testimonial-name h3 {
         font-size: 1.6rem;
+        margin-left: 40px;
     }
 
     .testimonial-name h5 {
         font-size: .8rem;
+        margin-left: 40px;
     }
 
     .testimonial-img img {
@@ -1305,118 +1436,12 @@ form.example button {
 
 }
 
-@media screen and (min-width: 475px) {
-
-    .navbar .container-fluid .navbar-brand {
-        color: #000;
-        font-family: var(--font-secondary);
-
-    }
-
-    .properties-container {
-        margin-bottom: 80px;
-    }
-
-    .properties-title {
-        text-align: center;
-    }
-
-    .properties-box-title {
-        text-align: center;
-    }
-
-    .properties-box-description {
-        text-align: center;
-    }
-
-
-
-    .properties-box-button {
-        text-align: center;
-        padding: 10px 10px 10px;
-        border-radius: 5px;
-        background-color: #2ECA6A;
-        justify-self: center;
-        display: block;
-        margin: auto;
-        border-radius: 8px;
-        border-width: 1px;
-        border-style: solid;
-        cursor: pointer;
-        text-align: center;
-        font-weight: bold;
-        transition: top 0.1s ease 0s, box-shadow 0.1s ease 0s, border-color 0.1s ease 0s, background-color 0.1s ease 0s, color 0.1s ease 0s;
-        white-space: nowrap;
-        text-decoration: none;
-        font-size: 16px;
-        line-height: 1.5;
-        padding: 8px 16px;
-        color: rgb(255, 255, 255);
-        border-color: transparent;
-        box-shadow: rgb(59 65 68 / 70%) 0px 8px 20px -15px;
-        outline: none;
-    }
-
-    .property-left {
-        position: absolute;
-        bottom: 20px;
-        font-size: 1rem;
-        text-align: left;
-    }
-
-
-    .agent-image {
-        margin: 1rem;
-    }
-
-
-
-    .agent-image {
-        position: relative;
-        width: 100%;
-    }
-
-    .agent-img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    .agent-overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: #2ECA6A;
-        overflow: hidden;
-        width: 100%;
-        height: 0;
-        transition: .5s ease;
-        opacity: 0.8;
-
-    }
-
-    .agent-text {
-        text-align: left;
-        margin-left: .5rem;
-        padding-top: 1.5rem;
-        color: #fff;
-        font-size: .9rem;
-    }
-
-    .agent-icon {
-        display: flex;
-        justify-content: center;
-        margin-top: 120px;
-        column-gap: 2rem;
-    }
-
-
+@media screen and (min-width: 375px) {
 
 
     .testimonial-vl {
         border-left: 3px solid #2eca6a;
-        height: 280px;
+        height: 220px;
         position: absolute;
         margin-right: 10px;
 
@@ -1424,116 +1449,38 @@ form.example button {
     }
 
 
-    .testimonial-box p {
-        margin-left: 40px;
+    .testimonial-right-icon {
+        color: #2eca6a;
+        font-size: 1rem;
+        left: 300px;
+        top: 130px;
+        position: absolute;
     }
 
-
-
-    .testimonial-name h3 {
-        font-size: 1.6rem;
+    .testimonial-left-icon {
+        color: #2eca6a;
+        font-size: 1rem;
+        left: 16px;
+        position: absolute;
     }
+}
 
-    .testimonial-name h5 {
-        font-size: .8rem;
-    }
-
-    .testimonial-img img {
-        border-radius: 50%;
-        width: 250px;
-        height: 250px;
-
-    }
-
-    .testimonial-img {
-        justify-content: center;
-        display: flex;
-    }
-
-    .footer-container {
-        padding-left: 10px;
-        padding-bottom: 40px;
-        padding-top: 30px;
-        padding-right: 10px;
+@media screen and (min-width: 425px) {
+    .testimonial-right-icon {
+        color: #2eca6a;
+        font-size: 1rem;
+        left: 270px;
+        top: 130px;
+        position: absolute;
     }
 
 }
 
-/* @media screen and (max-width: 375px) { */
 
-
-
-.property-left {
-    position: absolute;
-    bottom: 20px;
-    font-size: 1rem;
-    text-align: left;
-}
-
-
-.agent-image {
-    margin: 1rem;
-}
-
-
-
-.agent-image {
-    position: relative;
-    width: 100%;
-}
-
-.agent-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.agent-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #2ECA6A;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-    opacity: 0.8;
-
-}
-
-.agent-text {
-    text-align: left;
-    margin-left: .5rem;
-    padding-top: 1.5rem;
-    color: #fff;
-    font-size: .9rem;
-}
-
-.agent-icon {
-    display: flex;
-    justify-content: center;
-    column-gap: 2rem;
-}
-
-
-/* .testimonial-box {
-        display: block;
-        justify-content: center;
-        flex-direction: column;
-
-    } */
-
-
-
-
-
-
-/* } */
 
 @media screen and (min-width: 768px) {
     .navbar .container-fluid .navbar-brand {
-        font-family: inter;
+        font-family: 'Inter'sans-serif;
         margin-right: 3rem;
 
     }
@@ -1563,52 +1510,6 @@ form.example button {
         margin: 1rem;
     }
 
-
-    .agent-header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .agent-box {
-        display: flex;
-        grid-template-columns: repeat(3, max-width);
-    }
-
-    .agent-img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .agent-overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: #2ECA6A;
-        overflow: hidden;
-        width: 100%;
-        height: 0;
-        transition: .5s ease;
-        opacity: 0.8;
-
-    }
-
-    .agent-text {
-        text-align: left;
-        margin-left: .5rem;
-        padding-top: 1.5rem;
-        color: #fff;
-        font-size: .9rem;
-    }
-
-    .agent-icon {
-        display: flex;
-        justify-content: center;
-        /* bottom: 0px; */
-        margin-top: 40px;
-        column-gap: 1.5rem;
-    }
 
     .blog-header {
         flex-direction: row;
@@ -1685,6 +1586,43 @@ form.example button {
         outline: none;
     }
 
+    .agent-header {
+        justify-content: space-between;
+    }
+
+    .agent-box {
+        display: flex;
+    }
+
+    .agent-text {
+        /* position: absolute; */
+        font-size: 30px;
+        bottom: 60px;
+    }
+
+    .agent-name {
+        font-size: 1rem;
+    }
+
+    .agent-description {
+        font-size: .8rem;
+    }
+
+    .agent-contact {
+        font-size: .8rem;
+    }
+
+    .agent-img {
+        display: block;
+        width: 100%;
+        height: 320px;
+    }
+
+    .agent-icon {
+        top: 160px;
+        position: absolute;
+    }
+
     .testimonial-box {
         display: grid;
         margin-left: 3rem;
@@ -1695,9 +1633,25 @@ form.example button {
 
     .testimonial-vl {
         border-left: 3px solid #2eca6a;
-        height: 120px;
+        height: 160px;
         position: absolute;
-        margin-right: 10px;
+        /* margin-right: 10px; */
+    }
+
+
+    .testimonial-right-icon {
+        color: #2eca6a;
+        font-size: 1rem;
+        left: 670px;
+        top: 59px;
+        position: absolute;
+    }
+
+    .testimonial-left-icon {
+        color: #2eca6a;
+        font-size: 1rem;
+        left: 6px;
+        position: absolute;
     }
 
     .testimonial-name {
@@ -1712,21 +1666,21 @@ form.example button {
 @media screen and (min-width: 1024px) {
     .navbar .container-fluid .navbar-brand {
         margin-left: 8.5rem;
-        /* font-family: inter; */
         font-size: 28px;
         font-weight: 700;
         color: #000;
-        /* margin: 0; */
         font-family: var(--font-secondary);
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-family: 'Roboto'sans-serif;
 
     }
 
     .properties-group {
         display: flex;
         grid-template-columns: repeat(3, 1fr);
-        margin-left: 20rem;
-        margin-right: 20rem;
+        justify-content: center;
+        width: 60%;
+        margin: auto;
     }
 
 
@@ -1742,35 +1696,70 @@ form.example button {
         font-size: 1.2rem;
     }
 
-    .testimonial-container {
-        margin-right: 13rem;
-        margin-left: 13rem;
-    }
+    /* 
+    .testimonial-box {
+        margin-left: 7rem;
+        margin-right: 7rem;
+
+    } */
+
 
     .testimonial-vl {
         border-left: 3px solid #2eca6a;
-        height: 200px;
-        margin-right: 3rem;
+        height: 120px;
+        position: absolute;
+        margin-right: 10px;
+    }
+
+
+    .testimonial-box {
+        margin-bottom: 100px;
+    }
+
+    /* 
+    .testimonial-vl {
+        border-left: 3px solid #2eca6a;
+        height: 150px;
     }
 
     .testimonial-right-icon {
-        margin-bottom: 100px;
         color: #2eca6a;
         font-size: 1rem;
-        margin-top: 80px;
+        margin-left: 620px;
     }
 
     .testimonial-left-icon {
-        /* margin-bottom: 100px; */
         color: #2eca6a;
         font-size: 1rem;
-        margin-right: 5px;
+        left: 336px;
+        position: absolute;
+    } */
+
+    .testimonial-vl {
+        border-left: 3px solid #2eca6a;
+        height: 160px;
+        position: absolute;
+        /* margin-right: 10px; */
     }
 
-    .testimonial-name {
-        bottom: 180px;
-        position: relative;
+
+    .testimonial-right-icon {
+        color: #2eca6a;
+        font-size: 1rem;
+        left: 670px;
+        top: 59px;
+        position: absolute;
     }
+
+    .testimonial-left-icon {
+        color: #2eca6a;
+        font-size: 1rem;
+        left: 6px;
+        position: absolute;
+    }
+
+
+
 
     .testimonial-name h3 {
         font-size: 20px;
@@ -1790,21 +1779,23 @@ form.example button {
         font-family: var(--font-secondary);
     }
 
-    .testimonial-img {
-        bottom: 380px;
-        position: relative;
-        left: 185px;
+
+
+
+
+
+    .footer-container {
+        margin: 50px;
     }
 
-    .testimonial .swiper-pagination {
-        bottom: 360px;
-        position: relative;
+    .footer-heading {
+        margin-left: 80px;
     }
 
 
-    .footer-subsection {
+    /* .footer-subsection {
         margin-left: 300px;
-    }
+    } */
 
     .footer-subsection p {
         margin-right: 200px;
