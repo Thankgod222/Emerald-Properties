@@ -23,9 +23,7 @@ textarea {
 }
 
 body {
-    background-color: #f7f7f7;
-    color: black;
-    font-family: 'Roboto', sans-serif !important;
+    background-color: #ffffff;
 }
 
 h1,
@@ -102,13 +100,16 @@ img {
 
 }
 
+
+
 .hero-title {
     position: relative;
     bottom: 220px;
     color: #fff;
     font-size: 3rem;
     line-height: 1.12;
-    font-weight: 600px;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 .hero-description {
@@ -180,7 +181,7 @@ form.example button {
     text-align: center;
     position: relative;
     bottom: 20px;
-    font-family: 'Inter'sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -216,7 +217,6 @@ form.example button {
     position: relative;
     color: white;
     width: 100%;
-
 }
 
 .property-img {
@@ -233,24 +233,6 @@ form.example button {
     text-align: left;
 }
 
-
-
-/* .property-image:hover .overlay {
-    opacity: 1;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0px;
-    background: #2ECA6A;
-    color: #f1f1f1;
-    width: 100%;
-    opacity: 0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-} */
 
 .overlay {
     position: absolute;
@@ -404,14 +386,14 @@ form.example button {
 
 .agent-description {
     font-size: 1rem;
-    font-family: 'Roboto'sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: black;
 }
 
 
 .agent-contact {
     font-size: 1.2rem;
-    font-family: 'Roboto'sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: black;
 }
 
@@ -460,13 +442,12 @@ form.example button {
 }
 
 
-
-
-
 .blog-image {
     width: 100%;
     height: 300px;
 }
+
+
 
 .blog-box {
     grid-template-columns: repeat(3, 1fr);
@@ -474,6 +455,7 @@ form.example button {
     justify-content: center;
     row-gap: 2.5rem;
     position: relative;
+
 }
 
 .blog .swiper-pagination {
@@ -644,7 +626,7 @@ form.example button {
 
 .about-testimonail-title {
     text-align: center;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -654,7 +636,7 @@ form.example button {
 
 .about-testimonail-subtitle {
     text-align: center;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
@@ -866,7 +848,7 @@ form.example button {
     /* left: 48px; */
     top: 81px;
 
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -1054,33 +1036,41 @@ form.example button {
     justify-content: space-around;
 }
 
-.blog-home-title {
-    font-size: 16px;
-    font-family: 'inter'sans-serif;
-}
 
-
-
-.blog-home-filterspan {
-    text-transform: uppercase;
-    font-size: 1.20rem;
-}
 
 .blog-home-filter {
+    /* color: rgb(54, 134, 247); */
+    color: black;
+    font-family: Poppins, sans-serif;
+    padding-bottom: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
     word-spacing: 20px;
+
 }
+
+.blog-home-title {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 27px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+}
+
 
 .blog-home-filterslink {
     text-transform: uppercase;
-    font-size: 1.20rem;
     color: #2ECA6A;
     cursor: pointer;
 }
 
 .blog-home-description {
-    font-size: 16px;
+    font-size: 1rem;
     color: #999999;
-    font-family: 'Nunito, sans';
+    font-family: 'Nunito', sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -1103,7 +1093,7 @@ form.example button {
 @media screen and (min-width: 1024px) {
     .blog-home-group {
         display: grid;
-        grid-template-columns: repeat(4, 2fr);
+        grid-template-columns: repeat(3, 2fr);
         margin-left: 7rem;
         margin-right: 7rem;
     }
@@ -1123,7 +1113,6 @@ form.example button {
 # single Page Blog
 --------------------------------------------------------------*/
 
-
 .single-blog-img {
     height: 330px;
     width: 100%;
@@ -1140,38 +1129,130 @@ form.example button {
     transform: translate(-50%, -50%);
     font-size: 4.5rem;
     font-weight: 600px;
-    font-family: 'inter'sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #fff;
+}
+
+.single-blog-content {
+    margin-top: 5rem;
+    background-color: #fff;
+}
+
+
+.blog-contentB h2 {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.blog-subcontentB {
+    border: 2px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1.5rem;
+}
+
+form.singleblogbutton {
+    border-radius: 1rem;
+}
+
+form.singleblogbutton input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 75%;
+    background: #f1f1f1;
+    border-radius: .5rem 0rem 0rem .5rem;
+}
+
+
+form.singleblogbutton button {
+    width: 15%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0rem .5rem .5rem 0rem;
+}
+
+.blog-maincontentB {
+    border: 2px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1.5rem;
+    margin-top: .7rem;
+}
+
+.blog-supercontentB {
+    display: flex;
+    column-gap: 1.3rem;
+    margin-top: 20px;
+    background-color: whitesmoke;
+}
+
+.blog-supercontentBprice h3 {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 280px) {}
+
+@media screen and (min-width: 1440px) {
+    .single-blog-container {
+        /* min-width: 1440px; */
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .blog-contentA img {
+        width: 90%;
+    }
+
+    .blog-contentA p {
+        word-spacing: 10px;
+        line-height: 1.2;
+        margin-top: 20px;
+        width: 90%;
+    }
+
 }
 
 /* FOOTER SECTION */
 
 #footer {
-    background-color: #2ECA6A;
+    /* background-color: #2ECA6A; */
+    background-color: #000000;
     opacity: .9;
     margin-top: 100px;
 }
 
 
 .footer-heading h2 {
-    color: #000000;
+    /* color: #000000; */
+    color: #fff;
     font-size: 2rem;
     font-weight: 600;
 }
 
 .footer-heading p {
     text-decoration: none;
-    color: #555555;
+    /* color: #555555; */
+    color: #fff;
     margin-top: 0;
     margin-bottom: 1rem;
 }
 
 .footer-heading a {
     text-decoration: none;
-    color: #000000;
+    /* color: #000000; */
+    color: #fff;
     margin-top: 1rem;
     font-size: 1.2rem;
-    font-family: 'Inter'sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .footer-2 {
@@ -1259,14 +1340,8 @@ form.example button {
     .navbar .container-fluid .navbar-brand {
         color: #000;
         font-family: var(--font-secondary);
-
-
     }
 
-    .hero-img {
-        background-image: cover;
-
-    }
 
     .properties-container {
         margin-bottom: 80px;
@@ -1437,7 +1512,10 @@ form.example button {
 }
 
 @media screen and (min-width: 375px) {
-
+    .agent-icon {
+        position: relative;
+        bottom: 40px;
+    }
 
     .testimonial-vl {
         border-left: 3px solid #2eca6a;
@@ -1480,7 +1558,6 @@ form.example button {
 
 @media screen and (min-width: 768px) {
     .navbar .container-fluid .navbar-brand {
-        font-family: 'Inter'sans-serif;
         margin-right: 3rem;
 
     }
@@ -1615,7 +1692,7 @@ form.example button {
     .agent-img {
         display: block;
         width: 100%;
-        height: 320px;
+        height: auto;
     }
 
     .agent-icon {
@@ -1635,7 +1712,7 @@ form.example button {
         border-left: 3px solid #2eca6a;
         height: 160px;
         position: absolute;
-        /* margin-right: 10px; */
+        margin-right: 10px;
     }
 
 
@@ -1650,7 +1727,7 @@ form.example button {
     .testimonial-left-icon {
         color: #2eca6a;
         font-size: 1rem;
-        left: 6px;
+        left: 56px;
         position: absolute;
     }
 
@@ -1665,13 +1742,13 @@ form.example button {
 
 @media screen and (min-width: 1024px) {
     .navbar .container-fluid .navbar-brand {
-        margin-left: 8.5rem;
+        margin-left: 2.5rem;
         font-size: 28px;
         font-weight: 700;
         color: #000;
         font-family: var(--font-secondary);
         font-size: 1.5rem;
-        font-family: 'Roboto'sans-serif;
+        font-family: 'Roboto', sans-serif;
 
     }
 
@@ -1696,66 +1773,34 @@ form.example button {
         font-size: 1.2rem;
     }
 
-    /* 
-    .testimonial-box {
-        margin-left: 7rem;
-        margin-right: 7rem;
-
-    } */
-
-
-    .testimonial-vl {
-        border-left: 3px solid #2eca6a;
-        height: 120px;
-        position: absolute;
-        margin-right: 10px;
-    }
-
 
     .testimonial-box {
-        margin-bottom: 100px;
-    }
+        position: relative;
+        justify-content: center;
 
-    /* 
-    .testimonial-vl {
-        border-left: 3px solid #2eca6a;
-        height: 150px;
     }
-
-    .testimonial-right-icon {
-        color: #2eca6a;
-        font-size: 1rem;
-        margin-left: 620px;
-    }
-
-    .testimonial-left-icon {
-        color: #2eca6a;
-        font-size: 1rem;
-        left: 336px;
-        position: absolute;
-    } */
 
     .testimonial-vl {
         border-left: 3px solid #2eca6a;
         height: 160px;
         position: absolute;
-        /* margin-right: 10px; */
+        left: 9rem;
     }
 
 
     .testimonial-right-icon {
         color: #2eca6a;
         font-size: 1rem;
-        left: 670px;
-        top: 59px;
-        position: absolute;
+        left: 620px;
+        top: -30px;
+        position: relative;
     }
 
     .testimonial-left-icon {
         color: #2eca6a;
         font-size: 1rem;
         left: 6px;
-        position: absolute;
+        position: relative;
     }
 
 
@@ -1764,9 +1809,8 @@ form.example button {
     .testimonial-name h3 {
         font-size: 20px;
         font-weight: bold;
-        margin-right: 2rem;
+        margin-left: 10px;
         padding-left: 30px;
-
         color: var(--color-default);
         font-family: var(--font-secondary);
     }
@@ -1774,7 +1818,7 @@ form.example button {
     .testimonial-name h5 {
         font-size: 14px;
         color: #6c757d;
-        margin-right: 2rem;
+        margin-left: 10px;
         padding-left: 30px;
         font-family: var(--font-secondary);
     }
@@ -1803,4 +1847,35 @@ form.example button {
 
 
 
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    .navbar .container-fluid .navbar-brand {
+        margin-left: 5.5rem;
+        font-size: 28px;
+        font-weight: 700;
+        color: #000;
+        font-family: var(--font-secondary);
+        font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .testimonial-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .testimonial-box {
+        position: relative;
+        justify-content: center;
+    }
+
+    .testimonial-vl {
+        position: absolute;
+        left: .23rem;
+    }
 }
